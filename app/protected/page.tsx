@@ -1,6 +1,6 @@
-export const runtime = 'edge';
-
 import { auth, signOut } from 'app/auth';
+
+export const runtime = 'edge';
 
 export default async function ProtectedPage() {
   let session = await auth();
